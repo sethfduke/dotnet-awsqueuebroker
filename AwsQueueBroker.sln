@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsQueueBroker", "AwsQueueBroker\AwsQueueBroker.csproj", "{63FC061B-5B8B-481B-8F99-2B6B7BD19AC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsQueueBroker.UnitTests", "AwsQueueBroker.UnitTests\AwsQueueBroker.UnitTests.csproj", "{B67A5799-788F-46A6-8007-A5621169E160}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63FC061B-5B8B-481B-8F99-2B6B7BD19AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63FC061B-5B8B-481B-8F99-2B6B7BD19AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63FC061B-5B8B-481B-8F99-2B6B7BD19AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63FC061B-5B8B-481B-8F99-2B6B7BD19AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B67A5799-788F-46A6-8007-A5621169E160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B67A5799-788F-46A6-8007-A5621169E160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B67A5799-788F-46A6-8007-A5621169E160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B67A5799-788F-46A6-8007-A5621169E160}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
