@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AwsQueueBroker </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="AwsQueueBroker ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="awsqueuebroker">AwsQueueBroker</h1>
+
+<p>The AwsQueueBroker library allows for SQS queue message definitions to be constructed by assigning unique name attributes on each message and attaching messages by that name to an implementation of a message processor class and it's associated .net object model. This allows the developer to remove all the logic of receiving, sending, and deleting SQS queue messages from their code-base so that the focus can be placed on the actual processing of messages in a structured and repeatable manner.</p>
+<h2 id="installation">Installation</h2>
+<p>The library is available via Nuget at <a href="https://www.nuget.org/packages/AwsQueueBroker">https://www.nuget.org/packages/AwsQueueBroker</a></p>
+<h2 id="usage">Usage</h2>
+<p>The library works by associated an instance of the abstract QProcessor class with a unique message name and a .Net class that represents the body of that particular message. The QBroker can be setup with any number of named message types and proecssors.</p>
+<p><strong>Example</strong></p>
+<pre><code>public class TestMessageModel
+{
+    // This model should match the expected format of the message body.
+    public string Name { get; set; }
+}
+
+public class TestQProcessor : QProcessor&lt;TestMessageModel&gt;
+{
+    public override async Task Received(Message message, ILogger logger = null)
+    {
+        // do something here
+    }
+
+    public override async Task&lt;object&gt; Validate(Message message, TestMessageModel body, ILogger logger = null)
+    {
+        if (body.Name == &quot;valid&quot;)
+        {
+            // returning the body (or some modfiied version of it) tells the process it is valid and to continue.
+            return body;
+        }
+
+        if (body.Name == &quot;throw&quot;)
+        {
+            // throwing an exception in any method will forward the exception to the Error() method.
+            throw new Exception(&quot;We blew it.&quot;);
+        }
+
+        // returning null tells the processor the model was not valid and to stop processing this message.
+        return null;
+    }
+
+    public override async Task&lt;QReply&gt; Process(Message message, TestMessageModel model, ILogger logger = null)
+    {
+        // optionally returning a QReply instance will send a reply QMessage to the specified queue.
+        // return null if no reply is needed.
+        
+        return new QReply()
+        {
+            Message = new QMessage(&quot;reply-message&quot;, &quot;Some content&quot;),
+            ReplyToQueueUrl = &quot;http://localhost:4566/000000000000/qbroker-test-reply-queue&quot;
+        };
+    }
+
+    public override async Task Error(Message message, Exception exception, ILogger logger = null)
+    {
+        // do something here if an exception was thrown in any of the other methods.
+    }
+}
+</code></pre>
+<p>The QBroker can now be setup to process messages that match an assigned name for the above process implementation:</p>
+<pre><code>var sqsClient = new AmazonSQSClient(RegionEndpoint.USEast1);
+
+var broker = new QBroker(sqsClient)
+    .Setup(settings =&gt;
+    {
+        // keep fetching messages until there are no more.
+        settings.FetchUntilEmpty = true;
+        
+        // delete succesfully processed messages
+        settings.DeleteIfSuccess = true;
+
+        // delete messages marked invalid
+        settings.DeleteIfInvalid = true;
+        
+        // delete messages that resulted in an error
+        settings.DeleteIfError = true;
+        
+        // number of messages to fetch at a time (1 to 10)
+        settings.MaxNumberOfMessages = 10;
+        
+        // polling wait time in seconds
+        settings.WaitTimeSeconds = 0;
+        
+        // queue url to poll for messages
+        settings.QueueUrl = &quot;https://sqs.us-east-2.amazonaws.com/123456789012/MyQueue&quot;;
+        
+        // optional Serilog ILogger
+        settings.Logger = _createLogger();
+    })
+    // add the test processor with a message name attribute of
+    // test-message-name with TestMessageModel as the expected body.
+    .AddMessageType&lt;TestMessageModel, TestQProcessor&gt;(&quot;test-message-name&quot;);
+
+// poll for messages and process
+await broker.FetchAsync()
+</code></pre>
+<p>The broker can also be utilized to send messages outside of the scope of a processor if needed using</p>
+<pre><code>var model = new TestMessageModel() {
+    Name = &quot;test&quot;
+};
+
+// QMessage constructor can also include additional message attributes to include.
+var message = new QMessage(
+    &quot;test-message-name&quot;,
+    JsonSerializer.Serialize(model));
+
+broker.SendAsync(message, queueUrl));
+</code></pre>
+<h2 id="issues">Issues</h2>
+<p>Please submit any issues or feature requests to <a href="https://github.com/sethfduke/dotnet-awsqueuebroker/issues">https://github.com/sethfduke/dotnet-awsqueuebroker/issues</a></p>
+<h2 id="contributing">Contributing</h2>
+<ol>
+<li>Fork this repository.</li>
+<li>Create your feature branch: <code>git checkout -b my-new-feature</code></li>
+<li>Commit your changes: <code>git commit -am 'Add some feature'</code></li>
+<li>Push to the branch: <code>git push origin my-new-feature</code></li>
+<li>Submit a pull request</li>
+</ol>
+<h2 id="history">History</h2>
+<p>Version 1.0.0 (2021-02-16) - Initial release</p>
+<h2 id="credits">Credits</h2>
+<p>Seth Duke (@sethfduke)</p>
+<h2 id="license">License</h2>
+<p>The MIT License (MIT)</p>
+<p>Copyright (c) 2021 Seth Duke</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

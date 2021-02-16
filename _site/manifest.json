@@ -1,0 +1,224 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/sduke/Documents/GitHub/dotnet-awsqueuebroker/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AwsQueueBroker.Constants.Library.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AwsQueueBroker.Constants.Library.html",
+          "hash": "QCj5WR/G6hZVCORxi+Wdgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AwsQueueBroker.Constants.MessageAttributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AwsQueueBroker.Constants.MessageAttributes.html",
+          "hash": "+uo72O8hQ1HTnmETuorppA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AwsQueueBroker.Constants.MethodNames.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AwsQueueBroker.Constants.MethodNames.html",
+          "hash": "VDhLc+7u8QSvFyuRhckabw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AwsQueueBroker.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AwsQueueBroker.Constants.html",
+          "hash": "zFfmuTobSiXAk51obbtEtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AwsQueueBroker.QBroker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AwsQueueBroker.QBroker.html",
+          "hash": "YA1eby4h4ph+CiPnLBwGQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AwsQueueBroker.QBrokerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AwsQueueBroker.QBrokerSettings.html",
+          "hash": "wBaqIkDoE7Xs7YivbqNCTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AwsQueueBroker.QMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AwsQueueBroker.QMessage.html",
+          "hash": "XY4TGDTa4Q4E+ux/FFVT7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AwsQueueBroker.QProcessor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AwsQueueBroker.QProcessor-1.html",
+          "hash": "WTKLHVv47xd3/NsGtCh1fQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AwsQueueBroker.QReply.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AwsQueueBroker.QReply.html",
+          "hash": "582SDrxylDZ/bQ5jhqRy/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AwsQueueBroker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AwsQueueBroker.html",
+          "hash": "uZuoG3YklXxdFRNqtydieg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "GE+3oZdiqh/JF8KQUe4WPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "U0CjaiTOs8zXA968nVc8kQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "R07Az74b2fYlGU44TJaDgA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "q/cHogqNFljvBrDSZoNH2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because config changed.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ConfigChanged"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 10,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

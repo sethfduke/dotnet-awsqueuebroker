@@ -1,0 +1,517 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: AwsQueueBroker
+  name: AwsQueueBroker
+  href: api/AwsQueueBroker.html
+  commentId: N:AwsQueueBroker
+  fullName: AwsQueueBroker
+  nameWithType: AwsQueueBroker
+- uid: AwsQueueBroker.Constants
+  name: Constants
+  href: api/AwsQueueBroker.Constants.html
+  commentId: T:AwsQueueBroker.Constants
+  fullName: AwsQueueBroker.Constants
+  nameWithType: Constants
+- uid: AwsQueueBroker.Constants.Library
+  name: Constants.Library
+  href: api/AwsQueueBroker.Constants.Library.html
+  commentId: T:AwsQueueBroker.Constants.Library
+  fullName: AwsQueueBroker.Constants.Library
+  nameWithType: Constants.Library
+- uid: AwsQueueBroker.Constants.Library.SemVersion
+  name: SemVersion
+  href: api/AwsQueueBroker.Constants.Library.html#AwsQueueBroker_Constants_Library_SemVersion
+  commentId: P:AwsQueueBroker.Constants.Library.SemVersion
+  fullName: AwsQueueBroker.Constants.Library.SemVersion
+  nameWithType: Constants.Library.SemVersion
+- uid: AwsQueueBroker.Constants.Library.SemVersion*
+  name: SemVersion
+  href: api/AwsQueueBroker.Constants.Library.html#AwsQueueBroker_Constants_Library_SemVersion_
+  commentId: Overload:AwsQueueBroker.Constants.Library.SemVersion
+  isSpec: "True"
+  fullName: AwsQueueBroker.Constants.Library.SemVersion
+  nameWithType: Constants.Library.SemVersion
+- uid: AwsQueueBroker.Constants.Library.Version
+  name: Version
+  href: api/AwsQueueBroker.Constants.Library.html#AwsQueueBroker_Constants_Library_Version
+  commentId: F:AwsQueueBroker.Constants.Library.Version
+  fullName: AwsQueueBroker.Constants.Library.Version
+  nameWithType: Constants.Library.Version
+- uid: AwsQueueBroker.Constants.MessageAttributes
+  name: Constants.MessageAttributes
+  href: api/AwsQueueBroker.Constants.MessageAttributes.html
+  commentId: T:AwsQueueBroker.Constants.MessageAttributes
+  fullName: AwsQueueBroker.Constants.MessageAttributes
+  nameWithType: Constants.MessageAttributes
+- uid: AwsQueueBroker.Constants.MessageAttributes.MessageName
+  name: MessageName
+  href: api/AwsQueueBroker.Constants.MessageAttributes.html#AwsQueueBroker_Constants_MessageAttributes_MessageName
+  commentId: P:AwsQueueBroker.Constants.MessageAttributes.MessageName
+  fullName: AwsQueueBroker.Constants.MessageAttributes.MessageName
+  nameWithType: Constants.MessageAttributes.MessageName
+- uid: AwsQueueBroker.Constants.MessageAttributes.MessageName*
+  name: MessageName
+  href: api/AwsQueueBroker.Constants.MessageAttributes.html#AwsQueueBroker_Constants_MessageAttributes_MessageName_
+  commentId: Overload:AwsQueueBroker.Constants.MessageAttributes.MessageName
+  isSpec: "True"
+  fullName: AwsQueueBroker.Constants.MessageAttributes.MessageName
+  nameWithType: Constants.MessageAttributes.MessageName
+- uid: AwsQueueBroker.Constants.MessageAttributes.MessageVersion
+  name: MessageVersion
+  href: api/AwsQueueBroker.Constants.MessageAttributes.html#AwsQueueBroker_Constants_MessageAttributes_MessageVersion
+  commentId: P:AwsQueueBroker.Constants.MessageAttributes.MessageVersion
+  fullName: AwsQueueBroker.Constants.MessageAttributes.MessageVersion
+  nameWithType: Constants.MessageAttributes.MessageVersion
+- uid: AwsQueueBroker.Constants.MessageAttributes.MessageVersion*
+  name: MessageVersion
+  href: api/AwsQueueBroker.Constants.MessageAttributes.html#AwsQueueBroker_Constants_MessageAttributes_MessageVersion_
+  commentId: Overload:AwsQueueBroker.Constants.MessageAttributes.MessageVersion
+  isSpec: "True"
+  fullName: AwsQueueBroker.Constants.MessageAttributes.MessageVersion
+  nameWithType: Constants.MessageAttributes.MessageVersion
+- uid: AwsQueueBroker.Constants.MethodNames
+  name: Constants.MethodNames
+  href: api/AwsQueueBroker.Constants.MethodNames.html
+  commentId: T:AwsQueueBroker.Constants.MethodNames
+  fullName: AwsQueueBroker.Constants.MethodNames
+  nameWithType: Constants.MethodNames
+- uid: AwsQueueBroker.Constants.MethodNames.Error
+  name: Error
+  href: api/AwsQueueBroker.Constants.MethodNames.html#AwsQueueBroker_Constants_MethodNames_Error
+  commentId: F:AwsQueueBroker.Constants.MethodNames.Error
+  fullName: AwsQueueBroker.Constants.MethodNames.Error
+  nameWithType: Constants.MethodNames.Error
+- uid: AwsQueueBroker.Constants.MethodNames.Process
+  name: Process
+  href: api/AwsQueueBroker.Constants.MethodNames.html#AwsQueueBroker_Constants_MethodNames_Process
+  commentId: F:AwsQueueBroker.Constants.MethodNames.Process
+  fullName: AwsQueueBroker.Constants.MethodNames.Process
+  nameWithType: Constants.MethodNames.Process
+- uid: AwsQueueBroker.Constants.MethodNames.Received
+  name: Received
+  href: api/AwsQueueBroker.Constants.MethodNames.html#AwsQueueBroker_Constants_MethodNames_Received
+  commentId: F:AwsQueueBroker.Constants.MethodNames.Received
+  fullName: AwsQueueBroker.Constants.MethodNames.Received
+  nameWithType: Constants.MethodNames.Received
+- uid: AwsQueueBroker.Constants.MethodNames.Validate
+  name: Validate
+  href: api/AwsQueueBroker.Constants.MethodNames.html#AwsQueueBroker_Constants_MethodNames_Validate
+  commentId: F:AwsQueueBroker.Constants.MethodNames.Validate
+  fullName: AwsQueueBroker.Constants.MethodNames.Validate
+  nameWithType: Constants.MethodNames.Validate
+- uid: AwsQueueBroker.QBroker
+  name: QBroker
+  href: api/AwsQueueBroker.QBroker.html
+  commentId: T:AwsQueueBroker.QBroker
+  fullName: AwsQueueBroker.QBroker
+  nameWithType: QBroker
+- uid: AwsQueueBroker.QBroker.#ctor(Amazon.SQS.IAmazonSQS)
+  name: QBroker(IAmazonSQS)
+  href: api/AwsQueueBroker.QBroker.html#AwsQueueBroker_QBroker__ctor_Amazon_SQS_IAmazonSQS_
+  commentId: M:AwsQueueBroker.QBroker.#ctor(Amazon.SQS.IAmazonSQS)
+  fullName: AwsQueueBroker.QBroker.QBroker(Amazon.SQS.IAmazonSQS)
+  nameWithType: QBroker.QBroker(IAmazonSQS)
+- uid: AwsQueueBroker.QBroker.#ctor*
+  name: QBroker
+  href: api/AwsQueueBroker.QBroker.html#AwsQueueBroker_QBroker__ctor_
+  commentId: Overload:AwsQueueBroker.QBroker.#ctor
+  isSpec: "True"
+  fullName: AwsQueueBroker.QBroker.QBroker
+  nameWithType: QBroker.QBroker
+- uid: AwsQueueBroker.QBroker.AddMessageType*
+  name: AddMessageType
+  href: api/AwsQueueBroker.QBroker.html#AwsQueueBroker_QBroker_AddMessageType_
+  commentId: Overload:AwsQueueBroker.QBroker.AddMessageType
+  isSpec: "True"
+  fullName: AwsQueueBroker.QBroker.AddMessageType
+  nameWithType: QBroker.AddMessageType
+- uid: AwsQueueBroker.QBroker.AddMessageType``2(System.String)
+  name: AddMessageType<TModel, TProcessor>(String)
+  href: api/AwsQueueBroker.QBroker.html#AwsQueueBroker_QBroker_AddMessageType__2_System_String_
+  commentId: M:AwsQueueBroker.QBroker.AddMessageType``2(System.String)
+  name.vb: AddMessageType(Of TModel, TProcessor)(String)
+  fullName: AwsQueueBroker.QBroker.AddMessageType<TModel, TProcessor>(System.String)
+  fullName.vb: AwsQueueBroker.QBroker.AddMessageType(Of TModel, TProcessor)(System.String)
+  nameWithType: QBroker.AddMessageType<TModel, TProcessor>(String)
+  nameWithType.vb: QBroker.AddMessageType(Of TModel, TProcessor)(String)
+- uid: AwsQueueBroker.QBroker.DeleteAsync(AwsQueueBroker.QMessage)
+  name: DeleteAsync(QMessage)
+  href: api/AwsQueueBroker.QBroker.html#AwsQueueBroker_QBroker_DeleteAsync_AwsQueueBroker_QMessage_
+  commentId: M:AwsQueueBroker.QBroker.DeleteAsync(AwsQueueBroker.QMessage)
+  fullName: AwsQueueBroker.QBroker.DeleteAsync(AwsQueueBroker.QMessage)
+  nameWithType: QBroker.DeleteAsync(QMessage)
+- uid: AwsQueueBroker.QBroker.DeleteAsync*
+  name: DeleteAsync
+  href: api/AwsQueueBroker.QBroker.html#AwsQueueBroker_QBroker_DeleteAsync_
+  commentId: Overload:AwsQueueBroker.QBroker.DeleteAsync
+  isSpec: "True"
+  fullName: AwsQueueBroker.QBroker.DeleteAsync
+  nameWithType: QBroker.DeleteAsync
+- uid: AwsQueueBroker.QBroker.FetchAsync
+  name: FetchAsync()
+  href: api/AwsQueueBroker.QBroker.html#AwsQueueBroker_QBroker_FetchAsync
+  commentId: M:AwsQueueBroker.QBroker.FetchAsync
+  fullName: AwsQueueBroker.QBroker.FetchAsync()
+  nameWithType: QBroker.FetchAsync()
+- uid: AwsQueueBroker.QBroker.FetchAsync*
+  name: FetchAsync
+  href: api/AwsQueueBroker.QBroker.html#AwsQueueBroker_QBroker_FetchAsync_
+  commentId: Overload:AwsQueueBroker.QBroker.FetchAsync
+  isSpec: "True"
+  fullName: AwsQueueBroker.QBroker.FetchAsync
+  nameWithType: QBroker.FetchAsync
+- uid: AwsQueueBroker.QBroker.SendAsync(AwsQueueBroker.QMessage,System.String)
+  name: SendAsync(QMessage, String)
+  href: api/AwsQueueBroker.QBroker.html#AwsQueueBroker_QBroker_SendAsync_AwsQueueBroker_QMessage_System_String_
+  commentId: M:AwsQueueBroker.QBroker.SendAsync(AwsQueueBroker.QMessage,System.String)
+  fullName: AwsQueueBroker.QBroker.SendAsync(AwsQueueBroker.QMessage, System.String)
+  nameWithType: QBroker.SendAsync(QMessage, String)
+- uid: AwsQueueBroker.QBroker.SendAsync*
+  name: SendAsync
+  href: api/AwsQueueBroker.QBroker.html#AwsQueueBroker_QBroker_SendAsync_
+  commentId: Overload:AwsQueueBroker.QBroker.SendAsync
+  isSpec: "True"
+  fullName: AwsQueueBroker.QBroker.SendAsync
+  nameWithType: QBroker.SendAsync
+- uid: AwsQueueBroker.QBroker.Setup(System.Action{AwsQueueBroker.QBrokerSettings})
+  name: Setup(Action<QBrokerSettings>)
+  href: api/AwsQueueBroker.QBroker.html#AwsQueueBroker_QBroker_Setup_System_Action_AwsQueueBroker_QBrokerSettings__
+  commentId: M:AwsQueueBroker.QBroker.Setup(System.Action{AwsQueueBroker.QBrokerSettings})
+  name.vb: Setup(Action(Of QBrokerSettings))
+  fullName: AwsQueueBroker.QBroker.Setup(System.Action<AwsQueueBroker.QBrokerSettings>)
+  fullName.vb: AwsQueueBroker.QBroker.Setup(System.Action(Of AwsQueueBroker.QBrokerSettings))
+  nameWithType: QBroker.Setup(Action<QBrokerSettings>)
+  nameWithType.vb: QBroker.Setup(Action(Of QBrokerSettings))
+- uid: AwsQueueBroker.QBroker.Setup*
+  name: Setup
+  href: api/AwsQueueBroker.QBroker.html#AwsQueueBroker_QBroker_Setup_
+  commentId: Overload:AwsQueueBroker.QBroker.Setup
+  isSpec: "True"
+  fullName: AwsQueueBroker.QBroker.Setup
+  nameWithType: QBroker.Setup
+- uid: AwsQueueBroker.QBrokerSettings
+  name: QBrokerSettings
+  href: api/AwsQueueBroker.QBrokerSettings.html
+  commentId: T:AwsQueueBroker.QBrokerSettings
+  fullName: AwsQueueBroker.QBrokerSettings
+  nameWithType: QBrokerSettings
+- uid: AwsQueueBroker.QBrokerSettings.DeleteIfError
+  name: DeleteIfError
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_DeleteIfError
+  commentId: P:AwsQueueBroker.QBrokerSettings.DeleteIfError
+  fullName: AwsQueueBroker.QBrokerSettings.DeleteIfError
+  nameWithType: QBrokerSettings.DeleteIfError
+- uid: AwsQueueBroker.QBrokerSettings.DeleteIfError*
+  name: DeleteIfError
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_DeleteIfError_
+  commentId: Overload:AwsQueueBroker.QBrokerSettings.DeleteIfError
+  isSpec: "True"
+  fullName: AwsQueueBroker.QBrokerSettings.DeleteIfError
+  nameWithType: QBrokerSettings.DeleteIfError
+- uid: AwsQueueBroker.QBrokerSettings.DeleteIfInvalid
+  name: DeleteIfInvalid
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_DeleteIfInvalid
+  commentId: P:AwsQueueBroker.QBrokerSettings.DeleteIfInvalid
+  fullName: AwsQueueBroker.QBrokerSettings.DeleteIfInvalid
+  nameWithType: QBrokerSettings.DeleteIfInvalid
+- uid: AwsQueueBroker.QBrokerSettings.DeleteIfInvalid*
+  name: DeleteIfInvalid
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_DeleteIfInvalid_
+  commentId: Overload:AwsQueueBroker.QBrokerSettings.DeleteIfInvalid
+  isSpec: "True"
+  fullName: AwsQueueBroker.QBrokerSettings.DeleteIfInvalid
+  nameWithType: QBrokerSettings.DeleteIfInvalid
+- uid: AwsQueueBroker.QBrokerSettings.DeleteIfSuccess
+  name: DeleteIfSuccess
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_DeleteIfSuccess
+  commentId: P:AwsQueueBroker.QBrokerSettings.DeleteIfSuccess
+  fullName: AwsQueueBroker.QBrokerSettings.DeleteIfSuccess
+  nameWithType: QBrokerSettings.DeleteIfSuccess
+- uid: AwsQueueBroker.QBrokerSettings.DeleteIfSuccess*
+  name: DeleteIfSuccess
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_DeleteIfSuccess_
+  commentId: Overload:AwsQueueBroker.QBrokerSettings.DeleteIfSuccess
+  isSpec: "True"
+  fullName: AwsQueueBroker.QBrokerSettings.DeleteIfSuccess
+  nameWithType: QBrokerSettings.DeleteIfSuccess
+- uid: AwsQueueBroker.QBrokerSettings.FetchUntilEmpty
+  name: FetchUntilEmpty
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_FetchUntilEmpty
+  commentId: P:AwsQueueBroker.QBrokerSettings.FetchUntilEmpty
+  fullName: AwsQueueBroker.QBrokerSettings.FetchUntilEmpty
+  nameWithType: QBrokerSettings.FetchUntilEmpty
+- uid: AwsQueueBroker.QBrokerSettings.FetchUntilEmpty*
+  name: FetchUntilEmpty
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_FetchUntilEmpty_
+  commentId: Overload:AwsQueueBroker.QBrokerSettings.FetchUntilEmpty
+  isSpec: "True"
+  fullName: AwsQueueBroker.QBrokerSettings.FetchUntilEmpty
+  nameWithType: QBrokerSettings.FetchUntilEmpty
+- uid: AwsQueueBroker.QBrokerSettings.Logger
+  name: Logger
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_Logger
+  commentId: P:AwsQueueBroker.QBrokerSettings.Logger
+  fullName: AwsQueueBroker.QBrokerSettings.Logger
+  nameWithType: QBrokerSettings.Logger
+- uid: AwsQueueBroker.QBrokerSettings.Logger*
+  name: Logger
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_Logger_
+  commentId: Overload:AwsQueueBroker.QBrokerSettings.Logger
+  isSpec: "True"
+  fullName: AwsQueueBroker.QBrokerSettings.Logger
+  nameWithType: QBrokerSettings.Logger
+- uid: AwsQueueBroker.QBrokerSettings.MaxNumberOfMessages
+  name: MaxNumberOfMessages
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_MaxNumberOfMessages
+  commentId: P:AwsQueueBroker.QBrokerSettings.MaxNumberOfMessages
+  fullName: AwsQueueBroker.QBrokerSettings.MaxNumberOfMessages
+  nameWithType: QBrokerSettings.MaxNumberOfMessages
+- uid: AwsQueueBroker.QBrokerSettings.MaxNumberOfMessages*
+  name: MaxNumberOfMessages
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_MaxNumberOfMessages_
+  commentId: Overload:AwsQueueBroker.QBrokerSettings.MaxNumberOfMessages
+  isSpec: "True"
+  fullName: AwsQueueBroker.QBrokerSettings.MaxNumberOfMessages
+  nameWithType: QBrokerSettings.MaxNumberOfMessages
+- uid: AwsQueueBroker.QBrokerSettings.QueueUrl
+  name: QueueUrl
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_QueueUrl
+  commentId: P:AwsQueueBroker.QBrokerSettings.QueueUrl
+  fullName: AwsQueueBroker.QBrokerSettings.QueueUrl
+  nameWithType: QBrokerSettings.QueueUrl
+- uid: AwsQueueBroker.QBrokerSettings.QueueUrl*
+  name: QueueUrl
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_QueueUrl_
+  commentId: Overload:AwsQueueBroker.QBrokerSettings.QueueUrl
+  isSpec: "True"
+  fullName: AwsQueueBroker.QBrokerSettings.QueueUrl
+  nameWithType: QBrokerSettings.QueueUrl
+- uid: AwsQueueBroker.QBrokerSettings.WaitTimeSeconds
+  name: WaitTimeSeconds
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_WaitTimeSeconds
+  commentId: P:AwsQueueBroker.QBrokerSettings.WaitTimeSeconds
+  fullName: AwsQueueBroker.QBrokerSettings.WaitTimeSeconds
+  nameWithType: QBrokerSettings.WaitTimeSeconds
+- uid: AwsQueueBroker.QBrokerSettings.WaitTimeSeconds*
+  name: WaitTimeSeconds
+  href: api/AwsQueueBroker.QBrokerSettings.html#AwsQueueBroker_QBrokerSettings_WaitTimeSeconds_
+  commentId: Overload:AwsQueueBroker.QBrokerSettings.WaitTimeSeconds
+  isSpec: "True"
+  fullName: AwsQueueBroker.QBrokerSettings.WaitTimeSeconds
+  nameWithType: QBrokerSettings.WaitTimeSeconds
+- uid: AwsQueueBroker.QMessage
+  name: QMessage
+  href: api/AwsQueueBroker.QMessage.html
+  commentId: T:AwsQueueBroker.QMessage
+  fullName: AwsQueueBroker.QMessage
+  nameWithType: QMessage
+- uid: AwsQueueBroker.QMessage.#ctor(Amazon.SQS.Model.Message)
+  name: QMessage(Message)
+  href: api/AwsQueueBroker.QMessage.html#AwsQueueBroker_QMessage__ctor_Amazon_SQS_Model_Message_
+  commentId: M:AwsQueueBroker.QMessage.#ctor(Amazon.SQS.Model.Message)
+  fullName: AwsQueueBroker.QMessage.QMessage(Amazon.SQS.Model.Message)
+  nameWithType: QMessage.QMessage(Message)
+- uid: AwsQueueBroker.QMessage.#ctor(System.String,System.String,System.Collections.Generic.KeyValuePair{System.String,Amazon.SQS.Model.MessageAttributeValue}[])
+  name: QMessage(String, String, KeyValuePair<String, MessageAttributeValue>[])
+  href: api/AwsQueueBroker.QMessage.html#AwsQueueBroker_QMessage__ctor_System_String_System_String_System_Collections_Generic_KeyValuePair_System_String_Amazon_SQS_Model_MessageAttributeValue____
+  commentId: M:AwsQueueBroker.QMessage.#ctor(System.String,System.String,System.Collections.Generic.KeyValuePair{System.String,Amazon.SQS.Model.MessageAttributeValue}[])
+  name.vb: QMessage(String, String, KeyValuePair(Of String, MessageAttributeValue)())
+  fullName: AwsQueueBroker.QMessage.QMessage(System.String, System.String, System.Collections.Generic.KeyValuePair<System.String, Amazon.SQS.Model.MessageAttributeValue>[])
+  fullName.vb: AwsQueueBroker.QMessage.QMessage(System.String, System.String, System.Collections.Generic.KeyValuePair(Of System.String, Amazon.SQS.Model.MessageAttributeValue)())
+  nameWithType: QMessage.QMessage(String, String, KeyValuePair<String, MessageAttributeValue>[])
+  nameWithType.vb: QMessage.QMessage(String, String, KeyValuePair(Of String, MessageAttributeValue)())
+- uid: AwsQueueBroker.QMessage.#ctor*
+  name: QMessage
+  href: api/AwsQueueBroker.QMessage.html#AwsQueueBroker_QMessage__ctor_
+  commentId: Overload:AwsQueueBroker.QMessage.#ctor
+  isSpec: "True"
+  fullName: AwsQueueBroker.QMessage.QMessage
+  nameWithType: QMessage.QMessage
+- uid: AwsQueueBroker.QMessage.AwsSqsMessage
+  name: AwsSqsMessage
+  href: api/AwsQueueBroker.QMessage.html#AwsQueueBroker_QMessage_AwsSqsMessage
+  commentId: P:AwsQueueBroker.QMessage.AwsSqsMessage
+  fullName: AwsQueueBroker.QMessage.AwsSqsMessage
+  nameWithType: QMessage.AwsSqsMessage
+- uid: AwsQueueBroker.QMessage.AwsSqsMessage*
+  name: AwsSqsMessage
+  href: api/AwsQueueBroker.QMessage.html#AwsQueueBroker_QMessage_AwsSqsMessage_
+  commentId: Overload:AwsQueueBroker.QMessage.AwsSqsMessage
+  isSpec: "True"
+  fullName: AwsQueueBroker.QMessage.AwsSqsMessage
+  nameWithType: QMessage.AwsSqsMessage
+- uid: AwsQueueBroker.QMessage.Body
+  name: Body
+  href: api/AwsQueueBroker.QMessage.html#AwsQueueBroker_QMessage_Body
+  commentId: P:AwsQueueBroker.QMessage.Body
+  fullName: AwsQueueBroker.QMessage.Body
+  nameWithType: QMessage.Body
+- uid: AwsQueueBroker.QMessage.Body*
+  name: Body
+  href: api/AwsQueueBroker.QMessage.html#AwsQueueBroker_QMessage_Body_
+  commentId: Overload:AwsQueueBroker.QMessage.Body
+  isSpec: "True"
+  fullName: AwsQueueBroker.QMessage.Body
+  nameWithType: QMessage.Body
+- uid: AwsQueueBroker.QMessage.Id
+  name: Id
+  href: api/AwsQueueBroker.QMessage.html#AwsQueueBroker_QMessage_Id
+  commentId: P:AwsQueueBroker.QMessage.Id
+  fullName: AwsQueueBroker.QMessage.Id
+  nameWithType: QMessage.Id
+- uid: AwsQueueBroker.QMessage.Id*
+  name: Id
+  href: api/AwsQueueBroker.QMessage.html#AwsQueueBroker_QMessage_Id_
+  commentId: Overload:AwsQueueBroker.QMessage.Id
+  isSpec: "True"
+  fullName: AwsQueueBroker.QMessage.Id
+  nameWithType: QMessage.Id
+- uid: AwsQueueBroker.QMessage.MessageAttributes
+  name: MessageAttributes
+  href: api/AwsQueueBroker.QMessage.html#AwsQueueBroker_QMessage_MessageAttributes
+  commentId: P:AwsQueueBroker.QMessage.MessageAttributes
+  fullName: AwsQueueBroker.QMessage.MessageAttributes
+  nameWithType: QMessage.MessageAttributes
+- uid: AwsQueueBroker.QMessage.MessageAttributes*
+  name: MessageAttributes
+  href: api/AwsQueueBroker.QMessage.html#AwsQueueBroker_QMessage_MessageAttributes_
+  commentId: Overload:AwsQueueBroker.QMessage.MessageAttributes
+  isSpec: "True"
+  fullName: AwsQueueBroker.QMessage.MessageAttributes
+  nameWithType: QMessage.MessageAttributes
+- uid: AwsQueueBroker.QMessage.Name
+  name: Name
+  href: api/AwsQueueBroker.QMessage.html#AwsQueueBroker_QMessage_Name
+  commentId: P:AwsQueueBroker.QMessage.Name
+  fullName: AwsQueueBroker.QMessage.Name
+  nameWithType: QMessage.Name
+- uid: AwsQueueBroker.QMessage.Name*
+  name: Name
+  href: api/AwsQueueBroker.QMessage.html#AwsQueueBroker_QMessage_Name_
+  commentId: Overload:AwsQueueBroker.QMessage.Name
+  isSpec: "True"
+  fullName: AwsQueueBroker.QMessage.Name
+  nameWithType: QMessage.Name
+- uid: AwsQueueBroker.QMessage.Version
+  name: Version
+  href: api/AwsQueueBroker.QMessage.html#AwsQueueBroker_QMessage_Version
+  commentId: P:AwsQueueBroker.QMessage.Version
+  fullName: AwsQueueBroker.QMessage.Version
+  nameWithType: QMessage.Version
+- uid: AwsQueueBroker.QMessage.Version*
+  name: Version
+  href: api/AwsQueueBroker.QMessage.html#AwsQueueBroker_QMessage_Version_
+  commentId: Overload:AwsQueueBroker.QMessage.Version
+  isSpec: "True"
+  fullName: AwsQueueBroker.QMessage.Version
+  nameWithType: QMessage.Version
+- uid: AwsQueueBroker.QProcessor`1
+  name: QProcessor<TModel>
+  href: api/AwsQueueBroker.QProcessor-1.html
+  commentId: T:AwsQueueBroker.QProcessor`1
+  name.vb: QProcessor(Of TModel)
+  fullName: AwsQueueBroker.QProcessor<TModel>
+  fullName.vb: AwsQueueBroker.QProcessor(Of TModel)
+  nameWithType: QProcessor<TModel>
+  nameWithType.vb: QProcessor(Of TModel)
+- uid: AwsQueueBroker.QProcessor`1.Error(Amazon.SQS.Model.Message,System.Exception,Serilog.ILogger)
+  name: Error(Message, Exception, ILogger)
+  href: api/AwsQueueBroker.QProcessor-1.html#AwsQueueBroker_QProcessor_1_Error_Amazon_SQS_Model_Message_System_Exception_Serilog_ILogger_
+  commentId: M:AwsQueueBroker.QProcessor`1.Error(Amazon.SQS.Model.Message,System.Exception,Serilog.ILogger)
+  fullName: AwsQueueBroker.QProcessor<TModel>.Error(Amazon.SQS.Model.Message, System.Exception, Serilog.ILogger)
+  fullName.vb: AwsQueueBroker.QProcessor(Of TModel).Error(Amazon.SQS.Model.Message, System.Exception, Serilog.ILogger)
+  nameWithType: QProcessor<TModel>.Error(Message, Exception, ILogger)
+  nameWithType.vb: QProcessor(Of TModel).Error(Message, Exception, ILogger)
+- uid: AwsQueueBroker.QProcessor`1.Error*
+  name: Error
+  href: api/AwsQueueBroker.QProcessor-1.html#AwsQueueBroker_QProcessor_1_Error_
+  commentId: Overload:AwsQueueBroker.QProcessor`1.Error
+  isSpec: "True"
+  fullName: AwsQueueBroker.QProcessor<TModel>.Error
+  fullName.vb: AwsQueueBroker.QProcessor(Of TModel).Error
+  nameWithType: QProcessor<TModel>.Error
+  nameWithType.vb: QProcessor(Of TModel).Error
+- uid: AwsQueueBroker.QProcessor`1.Process(Amazon.SQS.Model.Message,`0,Serilog.ILogger)
+  name: Process(Message, TModel, ILogger)
+  href: api/AwsQueueBroker.QProcessor-1.html#AwsQueueBroker_QProcessor_1_Process_Amazon_SQS_Model_Message__0_Serilog_ILogger_
+  commentId: M:AwsQueueBroker.QProcessor`1.Process(Amazon.SQS.Model.Message,`0,Serilog.ILogger)
+  fullName: AwsQueueBroker.QProcessor<TModel>.Process(Amazon.SQS.Model.Message, TModel, Serilog.ILogger)
+  fullName.vb: AwsQueueBroker.QProcessor(Of TModel).Process(Amazon.SQS.Model.Message, TModel, Serilog.ILogger)
+  nameWithType: QProcessor<TModel>.Process(Message, TModel, ILogger)
+  nameWithType.vb: QProcessor(Of TModel).Process(Message, TModel, ILogger)
+- uid: AwsQueueBroker.QProcessor`1.Process*
+  name: Process
+  href: api/AwsQueueBroker.QProcessor-1.html#AwsQueueBroker_QProcessor_1_Process_
+  commentId: Overload:AwsQueueBroker.QProcessor`1.Process
+  isSpec: "True"
+  fullName: AwsQueueBroker.QProcessor<TModel>.Process
+  fullName.vb: AwsQueueBroker.QProcessor(Of TModel).Process
+  nameWithType: QProcessor<TModel>.Process
+  nameWithType.vb: QProcessor(Of TModel).Process
+- uid: AwsQueueBroker.QProcessor`1.Received(Amazon.SQS.Model.Message,Serilog.ILogger)
+  name: Received(Message, ILogger)
+  href: api/AwsQueueBroker.QProcessor-1.html#AwsQueueBroker_QProcessor_1_Received_Amazon_SQS_Model_Message_Serilog_ILogger_
+  commentId: M:AwsQueueBroker.QProcessor`1.Received(Amazon.SQS.Model.Message,Serilog.ILogger)
+  fullName: AwsQueueBroker.QProcessor<TModel>.Received(Amazon.SQS.Model.Message, Serilog.ILogger)
+  fullName.vb: AwsQueueBroker.QProcessor(Of TModel).Received(Amazon.SQS.Model.Message, Serilog.ILogger)
+  nameWithType: QProcessor<TModel>.Received(Message, ILogger)
+  nameWithType.vb: QProcessor(Of TModel).Received(Message, ILogger)
+- uid: AwsQueueBroker.QProcessor`1.Received*
+  name: Received
+  href: api/AwsQueueBroker.QProcessor-1.html#AwsQueueBroker_QProcessor_1_Received_
+  commentId: Overload:AwsQueueBroker.QProcessor`1.Received
+  isSpec: "True"
+  fullName: AwsQueueBroker.QProcessor<TModel>.Received
+  fullName.vb: AwsQueueBroker.QProcessor(Of TModel).Received
+  nameWithType: QProcessor<TModel>.Received
+  nameWithType.vb: QProcessor(Of TModel).Received
+- uid: AwsQueueBroker.QProcessor`1.Validate(Amazon.SQS.Model.Message,`0,Serilog.ILogger)
+  name: Validate(Message, TModel, ILogger)
+  href: api/AwsQueueBroker.QProcessor-1.html#AwsQueueBroker_QProcessor_1_Validate_Amazon_SQS_Model_Message__0_Serilog_ILogger_
+  commentId: M:AwsQueueBroker.QProcessor`1.Validate(Amazon.SQS.Model.Message,`0,Serilog.ILogger)
+  fullName: AwsQueueBroker.QProcessor<TModel>.Validate(Amazon.SQS.Model.Message, TModel, Serilog.ILogger)
+  fullName.vb: AwsQueueBroker.QProcessor(Of TModel).Validate(Amazon.SQS.Model.Message, TModel, Serilog.ILogger)
+  nameWithType: QProcessor<TModel>.Validate(Message, TModel, ILogger)
+  nameWithType.vb: QProcessor(Of TModel).Validate(Message, TModel, ILogger)
+- uid: AwsQueueBroker.QProcessor`1.Validate*
+  name: Validate
+  href: api/AwsQueueBroker.QProcessor-1.html#AwsQueueBroker_QProcessor_1_Validate_
+  commentId: Overload:AwsQueueBroker.QProcessor`1.Validate
+  isSpec: "True"
+  fullName: AwsQueueBroker.QProcessor<TModel>.Validate
+  fullName.vb: AwsQueueBroker.QProcessor(Of TModel).Validate
+  nameWithType: QProcessor<TModel>.Validate
+  nameWithType.vb: QProcessor(Of TModel).Validate
+- uid: AwsQueueBroker.QReply
+  name: QReply
+  href: api/AwsQueueBroker.QReply.html
+  commentId: T:AwsQueueBroker.QReply
+  fullName: AwsQueueBroker.QReply
+  nameWithType: QReply
+- uid: AwsQueueBroker.QReply.Message
+  name: Message
+  href: api/AwsQueueBroker.QReply.html#AwsQueueBroker_QReply_Message
+  commentId: P:AwsQueueBroker.QReply.Message
+  fullName: AwsQueueBroker.QReply.Message
+  nameWithType: QReply.Message
+- uid: AwsQueueBroker.QReply.Message*
+  name: Message
+  href: api/AwsQueueBroker.QReply.html#AwsQueueBroker_QReply_Message_
+  commentId: Overload:AwsQueueBroker.QReply.Message
+  isSpec: "True"
+  fullName: AwsQueueBroker.QReply.Message
+  nameWithType: QReply.Message
+- uid: AwsQueueBroker.QReply.ReplyToQueueUrl
+  name: ReplyToQueueUrl
+  href: api/AwsQueueBroker.QReply.html#AwsQueueBroker_QReply_ReplyToQueueUrl
+  commentId: P:AwsQueueBroker.QReply.ReplyToQueueUrl
+  fullName: AwsQueueBroker.QReply.ReplyToQueueUrl
+  nameWithType: QReply.ReplyToQueueUrl
+- uid: AwsQueueBroker.QReply.ReplyToQueueUrl*
+  name: ReplyToQueueUrl
+  href: api/AwsQueueBroker.QReply.html#AwsQueueBroker_QReply_ReplyToQueueUrl_
+  commentId: Overload:AwsQueueBroker.QReply.ReplyToQueueUrl
+  isSpec: "True"
+  fullName: AwsQueueBroker.QReply.ReplyToQueueUrl
+  nameWithType: QReply.ReplyToQueueUrl
