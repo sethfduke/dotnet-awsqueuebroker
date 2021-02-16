@@ -55,6 +55,12 @@ namespace AwsQueueBroker
             return this;
         }
 
+        /// <summary>
+        /// Delete a message from a queue.
+        /// </summary>
+        /// <param name="message">The QMessage to delete.</param>
+        /// <returns>Task</returns>
+        /// <exception cref="Exception">Throws if delete fails.</exception>
         public async Task DeleteAsync(
             QMessage message)
         {
