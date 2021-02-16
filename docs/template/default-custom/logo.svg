@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="186" height="20" viewBox="0 0 186 20">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 24px;
+        fill: #fff;
+        font-family: "Myriad Pro";
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text id="AwsQueueBroker" class="cls-1" y="17">AwsQueueBroker</text>
+</svg>
