@@ -8,7 +8,7 @@ The library is available via Nuget at https://www.nuget.org/packages/AwsQueueBro
 
 ## Usage
 
-The library works by associated an instance of the abstract QProcessor class with a unique message name and a .Net class that represents the body of that particular message. The QBroker can be setup with any number of named message types and proecssors.
+The library works by associating an instance of the abstract QProcessor class with a unique message name and a .Net class that represents the body of that particular message. The QBroker can be setup with any number of named message types and proecssors.
 
 ## Documentation
 
