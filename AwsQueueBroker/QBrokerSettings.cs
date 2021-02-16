@@ -48,10 +48,19 @@ namespace AwsQueueBroker
         /// </summary>
         public ILogger Logger { get; set; }
 
+        /// <summary>
+        /// Gets or sets flag if messages should be deleted once processed successfully.
+        /// </summary>
         public bool DeleteIfSuccess { get; set; } = true;
 
+        /// <summary>
+        /// Gets or sets flag if messages should be deleted once marked invalid.
+        /// </summary>
         public bool DeleteIfInvalid { get; set; } = true;
 
+        /// <summary>
+        /// Gets or sets flag if messages should be deleted if and error occured during processing.
+        /// </summary>
         public bool DeleteIfError { get; set; } = true;
     }
 }
