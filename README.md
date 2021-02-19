@@ -122,6 +122,46 @@ var message = new QMessage(
 broker.SendAsync(message, queueUrl));
 ```
 
+## Dependency Injection
+
+Version 1.0.1 includes support for standard dependency injection into processor definitions.
+
+```
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddSingleton<IQBroker, QBroker>();
+}
+```
+```
+public class TestQProcessor : QProcessor<TestMessageModel>
+{
+    private IMyDependency _myDependency;
+
+    public TestQProcessor(IMyDependency myDependency){
+        _myDependency = myDependency;
+    }
+
+    public override async Task Received(Message message, ILogger logger = null){
+        ...
+    }
+
+    public override async Task<object> Validate(Message message, TestMessageModel body, ILogger logger = null)
+    {
+        ...
+    }
+
+    public override async Task<QReply> Process(Message message, TestMessageModel model, ILogger logger = null)
+    {
+        ...
+    }
+
+    public override async Task Error(Message message, Exception exception, ILogger logger = null)
+    {
+        ...
+    }
+}
+```
+
 ## Issues
 
 Please submit any issues or feature requests to https://github.com/sethfduke/dotnet-awsqueuebroker/issues
@@ -136,6 +176,7 @@ Please submit any issues or feature requests to https://github.com/sethfduke/dot
 
 ## History
 
+Version 1.0.1 (2021-02-16) - Added support for dependency injection in processors
 Version 1.0.0 (2021-02-16) - Initial release
 
 ## Credits
