@@ -1,5 +1,7 @@
 ﻿using Amazon.SQS;
 using Amazon.SQS.Model;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 using Semver;
 using System;
 using System.Collections.Generic;
@@ -11,10 +13,11 @@ namespace AwsQueueBroker
     /// <summary>
     /// QBroker Class
     /// </summary>
-    public sealed class QBroker
+    public sealed class QBroker : IQBroker
     {
         private IAmazonSQS _sqsClient;
         private QBrokerSettings _settings;
+        private IServiceProvider _serviceProvider = null;
         private readonly Dictionary<string, Type> _messageTypes = new Dictionary<string, Type>();
         private readonly Dictionary<string, Type> _modelTypes = new Dictionary<string, Type>();
 
@@ -24,6 +27,21 @@ namespace AwsQueueBroker
         /// <param name="sqsClient">IAmazonSQS instance to use for send and receive.</param>
         public QBroker(IAmazonSQS sqsClient)
         {
+            _sqsClient = sqsClient;
+            Console.WriteLine("NOT DI");
+        }
+        
+        /// <summary>
+        /// Constructor: IServiceProvider dependency injection
+        /// </summary>
+        /// <param name="serviceProvider">IServiceProvider instance</param>
+        /// <param name="sqsClient">IAmazonSQS instance</param>
+        public QBroker(
+            IServiceProvider serviceProvider,
+            IAmazonSQS sqsClient)
+        {
+            Console.WriteLine("DI");
+            _serviceProvider = serviceProvider;
             _sqsClient = sqsClient;
         }
         
@@ -171,7 +189,9 @@ namespace AwsQueueBroker
                     var messageType = _messageTypes[qMessage.Name];
                     var modelType = _modelTypes[qMessage.Name];
 
-                    var processor = Activator.CreateInstance(messageType);
+                    var processor = _serviceProvider == null
+                        ? Activator.CreateInstance(messageType)
+                        : ActivatorUtilities.CreateInstance(_serviceProvider, messageType);
 
                     try
                     {
