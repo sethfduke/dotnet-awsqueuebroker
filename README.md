@@ -176,8 +176,8 @@ Please submit any issues or feature requests to https://github.com/sethfduke/dot
 
 ## History
 
-Version 1.0.1 (2021-02-16) - Added support for dependency injection in processors
-Version 1.0.0 (2021-02-16) - Initial release
+- Version 1.0.1 (2021-02-16) - Added support for dependency injection in processors
+- Version 1.0.0 (2021-02-16) - Initial release
 
 ## Credits
 
