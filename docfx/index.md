@@ -8,7 +8,11 @@ The library is available via Nuget at https://www.nuget.org/packages/AwsQueueBro
 
 ## Usage
 
-The library works by associated an instance of the abstract QProcessor class with a unique message name and a .Net class that represents the body of that particular message. The QBroker can be setup with any number of named message types and proecssors.
+The library works by associating an instance of the abstract QProcessor class with a unique message name and a .Net class that represents the body of that particular message. The QBroker can be setup with any number of named message types and proecssors.
+
+## Documentation
+
+Generated documentation can be viewed at https://sethfduke.github.io/dotnet-awsqueuebroker/index.html
 
 **Example**
 
@@ -118,6 +122,46 @@ var message = new QMessage(
 broker.SendAsync(message, queueUrl));
 ```
 
+## Dependency Injection
+
+Version 1.0.1 includes support for standard dependency injection into processor definitions.
+
+```
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddSingleton<IQBroker, QBroker>();
+}
+```
+```
+public class TestQProcessor : QProcessor<TestMessageModel>
+{
+    private IMyDependency _myDependency;
+
+    public TestQProcessor(IMyDependency myDependency){
+        _myDependency = myDependency;
+    }
+
+    public override async Task Received(Message message, ILogger logger = null){
+        ...
+    }
+
+    public override async Task<object> Validate(Message message, TestMessageModel body, ILogger logger = null)
+    {
+        ...
+    }
+
+    public override async Task<QReply> Process(Message message, TestMessageModel model, ILogger logger = null)
+    {
+        ...
+    }
+
+    public override async Task Error(Message message, Exception exception, ILogger logger = null)
+    {
+        ...
+    }
+}
+```
+
 ## Issues
 
 Please submit any issues or feature requests to https://github.com/sethfduke/dotnet-awsqueuebroker/issues
@@ -132,6 +176,7 @@ Please submit any issues or feature requests to https://github.com/sethfduke/dot
 
 ## History
 
+Version 1.0.1 (2021-02-16) - Added support for dependency injection in processors
 Version 1.0.0 (2021-02-16) - Initial release
 
 ## Credits
