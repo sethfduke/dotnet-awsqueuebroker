@@ -100,6 +100,83 @@ references:
   commentId: F:AwsQueueBroker.Constants.MethodNames.Validate
   fullName: AwsQueueBroker.Constants.MethodNames.Validate
   nameWithType: Constants.MethodNames.Validate
+- uid: AwsQueueBroker.IQBroker
+  name: IQBroker
+  href: api/AwsQueueBroker.IQBroker.html
+  commentId: T:AwsQueueBroker.IQBroker
+  fullName: AwsQueueBroker.IQBroker
+  nameWithType: IQBroker
+- uid: AwsQueueBroker.IQBroker.AddMessageType*
+  name: AddMessageType
+  href: api/AwsQueueBroker.IQBroker.html#AwsQueueBroker_IQBroker_AddMessageType_
+  commentId: Overload:AwsQueueBroker.IQBroker.AddMessageType
+  isSpec: "True"
+  fullName: AwsQueueBroker.IQBroker.AddMessageType
+  nameWithType: IQBroker.AddMessageType
+- uid: AwsQueueBroker.IQBroker.AddMessageType``2(System.String)
+  name: AddMessageType<TModel, TProcessor>(String)
+  href: api/AwsQueueBroker.IQBroker.html#AwsQueueBroker_IQBroker_AddMessageType__2_System_String_
+  commentId: M:AwsQueueBroker.IQBroker.AddMessageType``2(System.String)
+  name.vb: AddMessageType(Of TModel, TProcessor)(String)
+  fullName: AwsQueueBroker.IQBroker.AddMessageType<TModel, TProcessor>(System.String)
+  fullName.vb: AwsQueueBroker.IQBroker.AddMessageType(Of TModel, TProcessor)(System.String)
+  nameWithType: IQBroker.AddMessageType<TModel, TProcessor>(String)
+  nameWithType.vb: IQBroker.AddMessageType(Of TModel, TProcessor)(String)
+- uid: AwsQueueBroker.IQBroker.DeleteAsync(AwsQueueBroker.QMessage)
+  name: DeleteAsync(QMessage)
+  href: api/AwsQueueBroker.IQBroker.html#AwsQueueBroker_IQBroker_DeleteAsync_AwsQueueBroker_QMessage_
+  commentId: M:AwsQueueBroker.IQBroker.DeleteAsync(AwsQueueBroker.QMessage)
+  fullName: AwsQueueBroker.IQBroker.DeleteAsync(AwsQueueBroker.QMessage)
+  nameWithType: IQBroker.DeleteAsync(QMessage)
+- uid: AwsQueueBroker.IQBroker.DeleteAsync*
+  name: DeleteAsync
+  href: api/AwsQueueBroker.IQBroker.html#AwsQueueBroker_IQBroker_DeleteAsync_
+  commentId: Overload:AwsQueueBroker.IQBroker.DeleteAsync
+  isSpec: "True"
+  fullName: AwsQueueBroker.IQBroker.DeleteAsync
+  nameWithType: IQBroker.DeleteAsync
+- uid: AwsQueueBroker.IQBroker.FetchAsync
+  name: FetchAsync()
+  href: api/AwsQueueBroker.IQBroker.html#AwsQueueBroker_IQBroker_FetchAsync
+  commentId: M:AwsQueueBroker.IQBroker.FetchAsync
+  fullName: AwsQueueBroker.IQBroker.FetchAsync()
+  nameWithType: IQBroker.FetchAsync()
+- uid: AwsQueueBroker.IQBroker.FetchAsync*
+  name: FetchAsync
+  href: api/AwsQueueBroker.IQBroker.html#AwsQueueBroker_IQBroker_FetchAsync_
+  commentId: Overload:AwsQueueBroker.IQBroker.FetchAsync
+  isSpec: "True"
+  fullName: AwsQueueBroker.IQBroker.FetchAsync
+  nameWithType: IQBroker.FetchAsync
+- uid: AwsQueueBroker.IQBroker.SendAsync(AwsQueueBroker.QMessage,System.String)
+  name: SendAsync(QMessage, String)
+  href: api/AwsQueueBroker.IQBroker.html#AwsQueueBroker_IQBroker_SendAsync_AwsQueueBroker_QMessage_System_String_
+  commentId: M:AwsQueueBroker.IQBroker.SendAsync(AwsQueueBroker.QMessage,System.String)
+  fullName: AwsQueueBroker.IQBroker.SendAsync(AwsQueueBroker.QMessage, System.String)
+  nameWithType: IQBroker.SendAsync(QMessage, String)
+- uid: AwsQueueBroker.IQBroker.SendAsync*
+  name: SendAsync
+  href: api/AwsQueueBroker.IQBroker.html#AwsQueueBroker_IQBroker_SendAsync_
+  commentId: Overload:AwsQueueBroker.IQBroker.SendAsync
+  isSpec: "True"
+  fullName: AwsQueueBroker.IQBroker.SendAsync
+  nameWithType: IQBroker.SendAsync
+- uid: AwsQueueBroker.IQBroker.Setup(System.Action{AwsQueueBroker.QBrokerSettings})
+  name: Setup(Action<QBrokerSettings>)
+  href: api/AwsQueueBroker.IQBroker.html#AwsQueueBroker_IQBroker_Setup_System_Action_AwsQueueBroker_QBrokerSettings__
+  commentId: M:AwsQueueBroker.IQBroker.Setup(System.Action{AwsQueueBroker.QBrokerSettings})
+  name.vb: Setup(Action(Of QBrokerSettings))
+  fullName: AwsQueueBroker.IQBroker.Setup(System.Action<AwsQueueBroker.QBrokerSettings>)
+  fullName.vb: AwsQueueBroker.IQBroker.Setup(System.Action(Of AwsQueueBroker.QBrokerSettings))
+  nameWithType: IQBroker.Setup(Action<QBrokerSettings>)
+  nameWithType.vb: IQBroker.Setup(Action(Of QBrokerSettings))
+- uid: AwsQueueBroker.IQBroker.Setup*
+  name: Setup
+  href: api/AwsQueueBroker.IQBroker.html#AwsQueueBroker_IQBroker_Setup_
+  commentId: Overload:AwsQueueBroker.IQBroker.Setup
+  isSpec: "True"
+  fullName: AwsQueueBroker.IQBroker.Setup
+  nameWithType: IQBroker.Setup
 - uid: AwsQueueBroker.QBroker
   name: QBroker
   href: api/AwsQueueBroker.QBroker.html
@@ -112,6 +189,12 @@ references:
   commentId: M:AwsQueueBroker.QBroker.#ctor(Amazon.SQS.IAmazonSQS)
   fullName: AwsQueueBroker.QBroker.QBroker(Amazon.SQS.IAmazonSQS)
   nameWithType: QBroker.QBroker(IAmazonSQS)
+- uid: AwsQueueBroker.QBroker.#ctor(System.IServiceProvider,Amazon.SQS.IAmazonSQS)
+  name: QBroker(IServiceProvider, IAmazonSQS)
+  href: api/AwsQueueBroker.QBroker.html#AwsQueueBroker_QBroker__ctor_System_IServiceProvider_Amazon_SQS_IAmazonSQS_
+  commentId: M:AwsQueueBroker.QBroker.#ctor(System.IServiceProvider,Amazon.SQS.IAmazonSQS)
+  fullName: AwsQueueBroker.QBroker.QBroker(System.IServiceProvider, Amazon.SQS.IAmazonSQS)
+  nameWithType: QBroker.QBroker(IServiceProvider, IAmazonSQS)
 - uid: AwsQueueBroker.QBroker.#ctor*
   name: QBroker
   href: api/AwsQueueBroker.QBroker.html#AwsQueueBroker_QBroker__ctor_

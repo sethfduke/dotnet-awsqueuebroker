@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsQueueBroker", "AwsQueueB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsQueueBroker.UnitTests", "AwsQueueBroker.UnitTests\AwsQueueBroker.UnitTests.csproj", "{B67A5799-788F-46A6-8007-A5621169E160}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{066F9C08-1006-43B5-AD47-C92D455357E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{B67A5799-788F-46A6-8007-A5621169E160}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B67A5799-788F-46A6-8007-A5621169E160}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B67A5799-788F-46A6-8007-A5621169E160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066F9C08-1006-43B5-AD47-C92D455357E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066F9C08-1006-43B5-AD47-C92D455357E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066F9C08-1006-43B5-AD47-C92D455357E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066F9C08-1006-43B5-AD47-C92D455357E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
